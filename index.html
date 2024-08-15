@@ -19,9 +19,57 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+          src="./images/logo_coffeeshop_dark.svg"
+          alt="logo da Coffee shop"
+          class="nav__logo"
+        />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#">Receitas</a>
+            </a>
+          </li>
+            <li>
+              <a class="nav__link" href="#">Reservar uma mesa</a>
+            </a>
+          </li>
+            <li>
+              <a class="nav__link" href="#">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <div class="header__content__text">
+              <h1 class="header__title"><span class="header__span-accent">Café especial</span>&nbsp;
+                na biblioteca Triple Peaks</h1>
+              <p class="header__description">
+              Está é nossa zona de estudo! Temos aquele cafézinho para energizar
+              voce e vibrações aconchegantes para soltar a criatividade.
+            </p>
+          </div>
+          <img
+            src="./images/inside_coffee_shop.png"
+            alt="dentro do coffee shop"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <div class="header__footer_schedule"><p>Horários:
+
+            Segunda a sexta (10:00 - 19:00)
+            
+            Sábado a domingo (11:00 - 18:00)</p></div>
+          <div class="header__footer_address"><p>Success Avenue, a cidade de Triple Peaks</p></div>
+        </div>
+      </header>
       <main class="content">
-        <section class="recipes"></section>
+        <div class="content__description">
+        <h2 class="content__title">Receitas</h2>
+        <p class="content__text">Confira algumas receitas que coletamos para seu lanchinho caseiro</p>
+      </div>
+        <section class="recipes"><iframe src=""></iframe></section>
         <section class="reservation"></section>
       </main>
       <footer class="footer"></footer>
