@@ -1,10 +1,15 @@
+@import url(../vendor/normalize.css);
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0;
-  font-family: "Inter", "Arial", sans-serif;
-  line-height: 20px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -18,63 +23,34 @@
   max-height: 800px;
   box-sizing: border-box;
 }
-
-.nav {
-  display: flex;
-  padding: 0;
-  border: dashed royalblue;
-}
-
 .nav__logo {
   position: relative;
   top: 30px;
   left: 30px;
-  width: 105px;
+  width: 109px;
   height: 39px;
 }
+
 .nav__links {
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
   padding: 0;
   column-gap: 20px;
 }
 
 .nav__link {
-  color: black;
   text-decoration: none;
-  font-weight: bold;
-}
-.header__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-}
-.header__content {
-  position: relative;
-  top: 128px;
-  left: 80px;
-  max-width: 709px;
-}
-.header__title {
+  color: black;
   font-weight: 500;
-  line-height: 30px;
-  font-size: 25px;
-}
-.header__span-accent {
-  color: #2f80ed;
-  font-family: "noto-serif";
-  font-style: italic;
-  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
 }
 
-.header__description {
-  font-family: "noto-serif";
-  font-size: 23px;
-  margin-top: 50px;
-}
 .header__image {
   position: absolute;
   top: 124px;
@@ -83,15 +59,130 @@
   height: 568px;
 }
 
-.header img {
-  max-width: 636px;
+.header__content {
+  position: relative;
+  top: 124px;
+  left: 80px;
+  max-width: 709px;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+.header__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
+}
+.header__description {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  max-width: 683px;
+}
+
+.header__footer {
+  margin-top: auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.header__schedule {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+.header__address {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+}
+.header__paragraph {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
 }
 
 .content {
   background-color: #0a2850;
   background-image: url(../images/background_recipes.svg);
   background-position: center;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
 }
-´ .content__description {
+
+.recipes {
+  padding: 100px 0 0 80px;
+}
+
+.recipes__content {
+  position: relative;
+  top: 100px;
+  left: 80px;
+}
+.recipes__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  max-width: 580px;
+  color: #ffffff;
+}
+
+.recipes__subtitle {
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 438px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.recipes__video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0 215px 0;
+}
+
+.recipes__iframe {
+  width: 480px;
+  height: 273px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.recipes__video-caption {
+  margin-top: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
