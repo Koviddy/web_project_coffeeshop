@@ -66,7 +66,7 @@
 
 .footer__social-link {
   display: flex;
-  color: #c1c1c1;
+  color: #fff;
   font-family: "Inter";
   font-style: normal;
   font-weight: normal;
@@ -76,7 +76,13 @@
   align-items: center;
   column-gap: 10px;
 }
+.footer__social-link:hover {
+  color: #c1c1c1;
+}
 
+.footer__social-link:focus {
+  color: #c1c1c1;
+}
 .footer__social-icon {
   width: 16px;
   height: 16px;
